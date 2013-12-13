@@ -1,11 +1,21 @@
 require 'spec_helper'
 
 describe "Reservas" do
-  describe "GET /reservas" do
-    it "works! (now write some real specs)" do
-      # Run the generator again with the --webrat flag if you want to use webrat methods/matchers
-      get reservas_index_path
-      response.status.should be(200)
-    end
+	subject {page}
+  describe "GET /reservas/new" do
+  	before { visit '/reservas/new' }
+  	
+  		it {should have_title('Nova Reserva')}
+  
+    	it {should have_content("Escolha uma data")}
+    
+
+
+
   end
+
+
+
+
+
 end

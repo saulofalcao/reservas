@@ -3,8 +3,11 @@ ControleDeEstoque::Application.routes.draw do
   get "static_pages/ajuda"
 
   root "static_pages#home"
-
   
+  #get "reservas/index"
+
+  resources :reservas
+  post "reservas/check_available"
   # get "static_pages/index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
