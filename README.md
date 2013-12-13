@@ -1,3 +1,3 @@
-# Aplicação Controle de Estoque - Saulo
+# Aplicação de Reservas - Saulo
 
-Aplicativo de Controle de Estoque para Farmácia
+Aplicativo de Reservas
