@@ -45,7 +45,7 @@ class Reserva < ActiveRecord::Base
     all_spaces = find_by_sql("SELECT * FROM quartos #{conditions}
             id NOT IN (SELECT quarto_id FROM reservas
             WHERE end_date > \'#{start_date}\'
-            AND start_date < \'#{end_date}\')")
+            AND start_date < \'#{end_date}\') LIMIT 1")
 
   #   ActiveRecord::Base.logger.debug "des_type is #{des_type.to_i}"
   #   unless des_type.to_i == 0
